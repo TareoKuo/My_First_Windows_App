@@ -24,5 +24,10 @@ namespace My_first_Windows_App
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
