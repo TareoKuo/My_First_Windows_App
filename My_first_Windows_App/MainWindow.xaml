@@ -7,7 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Try click this button" HorizontalAlignment="Center" Margin="0,275,0,0" VerticalAlignment="Top" Height="50" Width="143" Click="Button_Click"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400*"/>
+            <ColumnDefinition Width="400*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Button!!" HorizontalAlignment="Left" Margin="328,217,0,0" VerticalAlignment="Top" Height="50" Width="144" Click="Button_Click" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Block.TextAlignment="Center" Margin="203,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="394" Height="22" TextAlignment="Center" ><Run Language="zh-tw" Text="請點擊 Button!!!"/></TextBlock>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="370,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2"><Run Language="zh-tw" Text="哈囉你好嗎"/></TextBlock>
 
     </Grid>
 </Window>

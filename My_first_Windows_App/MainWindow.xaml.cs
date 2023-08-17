@@ -27,7 +27,8 @@ namespace My_first_Windows_App
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("You click button!!");
+            textBlock1.Text = "You successfully clicked the button";
         }
     }
 }
