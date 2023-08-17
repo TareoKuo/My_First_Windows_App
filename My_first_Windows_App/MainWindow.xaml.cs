@@ -24,11 +24,19 @@ namespace My_first_Windows_App
         {
             InitializeComponent();
         }
-
+        private int textcount = 0;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("You click button!!");
-            textBlock1.Text = "You successfully clicked the button";
+
+            if (textcount == 0)
+            {
+                textcount = 1;
+                textBlock1.Text = "You successfully clicked the button";
+            } else
+            {
+                textBlock1.Text = "You can try to click button";
+                textcount = 0;
+            }
         }
     }
 }
