@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Management;
 using System.Windows;
+using System.Diagnostics;
+using System.ComponentModel;
 
 namespace My_first_Windows_App
 {
@@ -39,6 +41,36 @@ namespace My_first_Windows_App
                 TextBox2.Text = "ERROR";
                 MessageBox.Show("An error occurred while querying for WMI data: " + ex.Message);
             }
+        }
+
+        private void Menu_Github_click()
+        {
+            string websiteUrl = "https://github.com/TareoKuo/My_first_Windows_App/tree/master";
+            try
+            {
+                Process.Start(new ProcessStartInfo // 這是一個用於配置 Process 的初始化設定的新 ProcessStartInfo 物件
+                {
+                    FileName = websiteUrl,
+                    UseShellExecute = true // 是否使用操作系統的外殼來啟動程序
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("無法打開網頁：" + ex.Message);
+            }
+        }
+
+        private void Menu_Refresh_click(object sender, RoutedEventArgs e)
+        {
+            DisplayHardwareInfo();
+        }
+        private void Menu_Exit_click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+        private void Menu_Github_click(object sender, RoutedEventArgs e)
+        {
+            Menu_Github_click();
         }
     }
 }

@@ -22,13 +22,15 @@
             <DockPanel Background="#FFFFFF" LastChildFill="False" DockPanel.Dock="Top" Height="20">
                 <Menu Background="#FFFFFF" DockPanel.Dock="Top">
                     <MenuItem Header="_File" Height="20" Width="34">
-                        <MenuItem Header="_Refresh" />
+                        <MenuItem Header="_Refresh" Click="Menu_Refresh_click"/>
                         <Separator />
-                        <MenuItem Header="_Exit" />
+                        <MenuItem Header="_Exit" Click="Menu_Exit_click"/>
+                    </MenuItem>
+                    <MenuItem Header="_Information" Height="20" Width="79">
+                        <MenuItem Header="_Github" Click="Menu_Github_click"/>
                     </MenuItem>
                 </Menu>
             </DockPanel>
-
         </DockPanel>
     </Grid>
 </Window>
