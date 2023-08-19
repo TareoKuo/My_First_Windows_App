@@ -30,6 +30,15 @@
           }
         }
       },
+      "OpenHardwareMonitor/0.9.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/OpenHardwareMonitorLib.dll": {}
+        },
+        "runtime": {
+          "lib/net45/OpenHardwareMonitorLib.dll": {}
+        }
+      },
       "System.CodeDom/5.0.0": {
         "type": "package",
         "compile": {
@@ -160,6 +169,19 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.xml",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "OpenHardwareMonitor/0.9.6": {
+      "sha512": "vbx870Mi1nzz99VYx4yF0uaH2a8jtQ94Y+vT+0pRZz3alvCzaiJlbre7ArV8oP2YDNO1oVuvYxKZSoWSFUFj3Q==",
+      "type": "package",
+      "path": "openhardwaremonitor/0.9.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "OpenHardwareMonitor.png",
+        "lib/net45/OpenHardwareMonitorLib.dll",
+        "openhardwaremonitor.0.9.6.nupkg.sha512",
+        "openhardwaremonitor.nuspec"
       ]
     },
     "System.CodeDom/5.0.0": {
@@ -316,6 +338,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
+      "OpenHardwareMonitor >= 0.9.6",
       "System.Management >= 5.0.0"
     ]
   },
@@ -363,6 +386,10 @@
       "net5.0-windows7.0": {
         "targetAlias": "net5.0-windows",
         "dependencies": {
+          "OpenHardwareMonitor": {
+            "target": "Package",
+            "version": "[0.9.6, )"
+          },
           "System.Management": {
             "target": "Package",
             "version": "[5.0.0, )"
@@ -389,5 +416,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' 而非專案目標架構 'net5.0-windows7.0' 還原了套件 'OpenHardwareMonitor 0.9.6'。此套件與您的專案並非完全相容。",
+      "libraryId": "OpenHardwareMonitor",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    }
+  ]
 }

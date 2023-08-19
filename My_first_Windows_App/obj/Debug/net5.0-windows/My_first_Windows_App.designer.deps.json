@@ -27,6 +27,14 @@
           }
         }
       },
+      "OpenHardwareMonitor/0.9.6": {
+        "runtime": {
+          "lib/net45/OpenHardwareMonitorLib.dll": {
+            "assemblyVersion": "0.9.6.0",
+            "fileVersion": "0.9.6.0"
+          }
+        }
+      },
       "System.CodeDom/5.0.0": {
         "runtime": {
           "lib/netstandard2.0/System.CodeDom.dll": {
@@ -114,6 +122,13 @@
       "sha512": "sha512-dDoKi0PnDz31yAyETfRntsLArTlVAVzUzCIvvEDsDsucrl33Dl8pIJG06ePTJTI3tGpeyHS9Cq7Foc/s4EeKcg==",
       "path": "microsoft.win32.registry/5.0.0",
       "hashPath": "microsoft.win32.registry.5.0.0.nupkg.sha512"
+    },
+    "OpenHardwareMonitor/0.9.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vbx870Mi1nzz99VYx4yF0uaH2a8jtQ94Y+vT+0pRZz3alvCzaiJlbre7ArV8oP2YDNO1oVuvYxKZSoWSFUFj3Q==",
+      "path": "openhardwaremonitor/0.9.6",
+      "hashPath": "openhardwaremonitor.0.9.6.nupkg.sha512"
     },
     "System.CodeDom/5.0.0": {
       "type": "package",

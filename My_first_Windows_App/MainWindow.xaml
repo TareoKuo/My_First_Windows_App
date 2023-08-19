@@ -9,12 +9,12 @@
         Title="MainWindow" Height="485" Width="491" ResizeMode="CanMinimize">
 
     <Grid Background="#E0E0E0">
-        <TextBlock HorizontalAlignment="Center" Margin="0,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="471" Height="23"><Run Text="處理器資訊"/><Run Language="zh-tw" Text="-----------------------------------------"/><LineBreak/><Run Language="zh-tw"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="44,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="104" IsEnabled="False" Height="17"><Run Text="處理器名稱"/><Run Language="zh-tw" Text="："/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Margin="0,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="471" Height="23"><Run Text="  Computer Information--------------------------------"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="44,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="104" IsEnabled="False" Height="17" Text="處理器名稱："/>
         <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Margin="148,71,0,0" Text="Unknown" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" FontSize="12"/>
         <TextBlock HorizontalAlignment="Left" Margin="44,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="104" IsEnabled="False" Height="17" Text="系 統 名 稱 ：&#xA;"/>
         <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Margin="148,93,0,0" Text="Unknown" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" FontSize="12"/>
-        <TextBlock HorizontalAlignment="Left" Margin="44,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="104" IsEnabled="False" Height="17"><Run Text="處理器名稱"/><Run Language="zh-tw" Text="："/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="44,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="104" IsEnabled="False" Height="17"><Run Text="     UUID     ："/><LineBreak/><Run/></TextBlock>
         <TextBox x:Name="TextBox3" HorizontalAlignment="Left" Margin="148,115,0,0" Text="Unknown" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" FontSize="12"/>
         <TextBlock HorizontalAlignment="Left" Margin="44,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="104" IsEnabled="False" Height="17"><Run Text="處理器名稱"/><Run Language="zh-tw" Text="："/><LineBreak/><Run/></TextBlock>
         <TextBox x:Name="TextBox4" HorizontalAlignment="Left" Margin="148,137,0,0" Text="Unknown" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" FontSize="12"/>
