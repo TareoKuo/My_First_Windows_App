@@ -139,7 +139,7 @@ namespace My_first_Windows_App
 
         private void Menu_Github_click()
         {
-            string websiteUrl = "https://github.com/TareoKuo/My_first_Windows_App/tree/master";
+            string websiteUrl = "https://github.com/TareoKuo/My_first_Windows_App.git";
             try
             {
                 // 這是一個用於配置 Process 的初始化設定的新 ProcessStartInfo 物件
