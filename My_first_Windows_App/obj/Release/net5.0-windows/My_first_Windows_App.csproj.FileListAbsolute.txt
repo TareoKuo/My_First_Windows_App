@@ -25,3 +25,4 @@ C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_Ap
 C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\bin\Release\net5.0-windows\System.Windows.Forms.Ribbon35.dll
 C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\bin\Release\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.Management.dll
 C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\obj\Release\net5.0-windows\My_first_Windows_App.csproj.CopyComplete
+C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\obj\Release\net5.0-windows\My_first_Windows_App.csproj.AssemblyReference.cache
