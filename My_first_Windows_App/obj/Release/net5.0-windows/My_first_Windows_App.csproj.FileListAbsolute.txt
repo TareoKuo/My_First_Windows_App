@@ -5,7 +5,6 @@ C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_Ap
 C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\bin\Release\net5.0-windows\My_first_Windows_App.dll
 C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\bin\Release\net5.0-windows\ref\My_first_Windows_App.dll
 C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\bin\Release\net5.0-windows\My_first_Windows_App.pdb
-C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\obj\Release\net5.0-windows\My_first_Windows_App.csproj.AssemblyReference.cache
 C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\obj\Release\net5.0-windows\MainWindow.g.cs
 C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\obj\Release\net5.0-windows\App.g.cs
 C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\obj\Release\net5.0-windows\My_first_Windows_App_MarkupCompile.cache
@@ -20,3 +19,9 @@ C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_Ap
 C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\obj\Release\net5.0-windows\ref\My_first_Windows_App.dll
 C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\obj\Release\net5.0-windows\My_first_Windows_App.pdb
 C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\obj\Release\net5.0-windows\My_first_Windows_App.genruntimeconfig.cache
+C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\bin\Release\net5.0-windows\OpenHardwareMonitorLib.dll
+C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\bin\Release\net5.0-windows\System.Management.dll
+C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\bin\Release\net5.0-windows\System.Reactive.Windows.Forms.dll
+C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\bin\Release\net5.0-windows\System.Windows.Forms.Ribbon35.dll
+C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\bin\Release\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.Management.dll
+C:\Users\kty89\Desktop\Windows app Test\My_first_Windows_App\My_first_Windows_App\obj\Release\net5.0-windows\My_first_Windows_App.csproj.CopyComplete

@@ -68,6 +68,15 @@
           }
         }
       },
+      "System.Reactive.Windows.Forms/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net472/System.Reactive.Windows.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/net472/System.Reactive.Windows.Forms.dll": {}
+        }
+      },
       "System.Security.AccessControl/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -104,6 +113,15 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "System.Windows.Forms.Ribbon35/3.5.8": {
+        "type": "package",
+        "compile": {
+          "lib/net35/System.Windows.Forms.Ribbon35.dll": {}
+        },
+        "runtime": {
+          "lib/net35/System.Windows.Forms.Ribbon35.dll": {}
         }
       }
     }
@@ -233,6 +251,19 @@
         "version.txt"
       ]
     },
+    "System.Reactive.Windows.Forms/5.0.0": {
+      "sha512": "8etq1f+TYSkBU2Z9WIzErjSiE6/Cz0cZC5G1e1ktxKMTRoNO+gJuoXwm+XCnyHCZtQ3fH6zCRB06AxEzAghzsA==",
+      "type": "package",
+      "path": "system.reactive.windows.forms/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/System.Reactive.Windows.Forms.dll",
+        "lib/net472/System.Reactive.Windows.Forms.xml",
+        "system.reactive.windows.forms.5.0.0.nupkg.sha512",
+        "system.reactive.windows.forms.nuspec"
+      ]
+    },
     "System.Security.AccessControl/5.0.0": {
       "sha512": "dagJ1mHZO3Ani8GH0PHpPEe/oYO+rVdbQjvjJkBRNQkX4t0r1iaeGn8+/ybkSLEan3/slM0t59SVdHzuHf2jmw==",
       "type": "package",
@@ -334,12 +365,27 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "System.Windows.Forms.Ribbon35/3.5.8": {
+      "sha512": "eCT9IcJyU/NDrDA7Obp40Ata7hvPTVrtKjcofJe4LC/qjx7MNpOR0vNDfc5IDEzZi5bP5wGfJpVOWnnFeL2AUQ==",
+      "type": "package",
+      "path": "system.windows.forms.ribbon35/3.5.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Updates.txt",
+        "lib/net35/System.Windows.Forms.Ribbon35.dll",
+        "system.windows.forms.ribbon35.3.5.8.nupkg.sha512",
+        "system.windows.forms.ribbon35.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
       "OpenHardwareMonitor >= 0.9.6",
-      "System.Management >= 5.0.0"
+      "System.Management >= 5.0.0",
+      "System.Reactive.Windows.Forms >= 5.0.0",
+      "System.Windows.Forms.Ribbon35 >= 3.5.8"
     ]
   },
   "packageFolders": {
@@ -393,6 +439,14 @@
           "System.Management": {
             "target": "Package",
             "version": "[5.0.0, )"
+          },
+          "System.Reactive.Windows.Forms": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
+          "System.Windows.Forms.Ribbon35": {
+            "target": "Package",
+            "version": "[3.5.8, )"
           }
         },
         "imports": [
@@ -424,6 +478,26 @@
       "warningLevel": 1,
       "message": "已使用 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' 而非專案目標架構 'net5.0-windows7.0' 還原了套件 'OpenHardwareMonitor 0.9.6'。此套件與您的專案並非完全相容。",
       "libraryId": "OpenHardwareMonitor",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' 而非專案目標架構 'net5.0-windows7.0' 還原了套件 'System.Reactive.Windows.Forms 5.0.0'。此套件與您的專案並非完全相容。",
+      "libraryId": "System.Reactive.Windows.Forms",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' 而非專案目標架構 'net5.0-windows7.0' 還原了套件 'System.Windows.Forms.Ribbon35 3.5.8'。此套件與您的專案並非完全相容。",
+      "libraryId": "System.Windows.Forms.Ribbon35",
       "targetGraphs": [
         "net5.0-windows7.0"
       ]

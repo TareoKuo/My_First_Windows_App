@@ -7,30 +7,53 @@
         xmlns:VisualBasic="clr-namespace:Microsoft.VisualBasic;assembly=Microsoft.VisualBasic.Core" x:Class="My_first_Windows_App.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="485" Width="491" ResizeMode="CanMinimize">
-
     <Grid Background="#E0E0E0">
-        <TextBlock HorizontalAlignment="Center" Margin="0,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="471" Height="23"><Run Text="  Computer Information--------------------------------"/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="44,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="104" IsEnabled="False" Height="17" Text="處理器名稱："/>
-        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Margin="148,71,0,0" Text="Unknown" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" FontSize="12"/>
-        <TextBlock HorizontalAlignment="Left" Margin="44,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="104" IsEnabled="False" Height="17" Text="系 統 名 稱 ：&#xA;"/>
-        <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Margin="148,93,0,0" Text="Unknown" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" FontSize="12"/>
-        <TextBlock HorizontalAlignment="Left" Margin="44,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="104" IsEnabled="False" Height="17"><Run Text="     UUID     ："/><LineBreak/><Run/></TextBlock>
-        <TextBox x:Name="TextBox3" HorizontalAlignment="Left" Margin="148,115,0,0" Text="Unknown" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" FontSize="12"/>
-        <TextBlock HorizontalAlignment="Left" Margin="44,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="104" IsEnabled="False" Height="17"><Run Text="處理器名稱"/><Run Language="zh-tw" Text="："/><LineBreak/><Run/></TextBlock>
-        <TextBox x:Name="TextBox4" HorizontalAlignment="Left" Margin="148,137,0,0" Text="Unknown" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" FontSize="12"/>
         <DockPanel LastChildFill="False">
-            <DockPanel Background="#FFFFFF" LastChildFill="False" DockPanel.Dock="Top" Height="20">
-                <Menu Background="#FFFFFF" DockPanel.Dock="Top">
-                    <MenuItem Header="_File" Height="20" Width="34">
-                        <MenuItem Header="_Refresh" Click="Menu_Refresh_click"/>
-                        <Separator />
-                        <MenuItem Header="_Exit" Click="Menu_Exit_click"/>
-                    </MenuItem>
-                    <MenuItem Header="_Information" Height="20" Width="79">
-                        <MenuItem Header="_Github" Click="Menu_Github_click"/>
-                    </MenuItem>
-                </Menu>
-            </DockPanel>
+            <Menu Background="#FFFFFF" DockPanel.Dock="Top">
+                <MenuItem Header="_File" Height="20" Width="34">
+                    <MenuItem Header="_Refresh" Click="Menu_Refresh_click"/>
+                    <Separator />
+                    <MenuItem Header="_Exit" Click="Menu_Exit_click"/>
+                </MenuItem>
+                <MenuItem Header="_Information" Height="20" Width="79">
+                    <MenuItem Header="_Github" Click="Menu_Github_click"/>
+                </MenuItem>
+            </Menu>
         </DockPanel>
+        <TextBlock HorizontalAlignment="Center" Margin="0,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="471" Height="23" Text="  System Information" FontFamily="Arial Black"/>
+        <Grid Margin="10,53,10,271" Background="White">
+            <Grid Margin="0,52,0,212"/>
+            <TextBlock HorizontalAlignment="Left" Margin="13,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="125" IsEnabled="False" Height="17" Text="CPU Name       ："/>
+            <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Margin="152,35,0,0" Text="Unknown" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" FontSize="12"/>
+            <TextBlock HorizontalAlignment="Left" Margin="13,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="118" IsEnabled="False" Height="17" Text="System Name ："/>
+            <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Margin="152,78,0,0" Text="Unknown" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" FontSize="12"/>
+            <TextBlock HorizontalAlignment="Left" Margin="13,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="134" IsEnabled="False" Height="17"><Run Text="UUID                 ："/><LineBreak/><Run/></TextBlock>
+            <TextBox x:Name="TextBox3" HorizontalAlignment="Left" Margin="152,101,0,0" Text="Unknown" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" FontSize="12"/>
+            <TextBlock HorizontalAlignment="Left" Margin="13,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="118" IsEnabled="False" Height="17"><Run Text="CPU ID              ："/><LineBreak/><Run/></TextBlock>
+            <TextBox x:Name="TextBox4" HorizontalAlignment="Left" Margin="152,57,0,0" Text="Unknown" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" FontSize="12"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="CPU Information and Computer Information" FontFamily="Arial Black"/>
+        </Grid>
+        <Grid Margin="10,184,10,184" Background="White">
+            <Grid Margin="0,52,0,212"/>
+            <TextBlock HorizontalAlignment="Left" Margin="13,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="134" IsEnabled="False" Height="17" Text="Display Name      ："/>
+            <TextBox x:Name="TextBox5" HorizontalAlignment="Left" Margin="152,35,0,0" Text="Unknown" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" FontSize="12"/>
+            <TextBox x:Name="TextBox6" HorizontalAlignment="Left" Margin="152,58,0,0" Text="Unknown" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" FontSize="12"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="139" IsEnabled="False" Height="17" Text="Image resolutionl："/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Display Information" FontFamily="Arial Black"/>
+        </Grid>
+        <Grid Margin="10,278,10,16" Background="White">
+            <Grid Margin="0,52,0,212"/>
+            <TextBlock HorizontalAlignment="Left" Margin="13,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="125" IsEnabled="False" Height="17" Text="RAM Tpye        ："/>
+            <TextBox x:Name="TextBox7" HorizontalAlignment="Left" Margin="152,35,0,0" Text="Unknown" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" FontSize="12"/>
+            <TextBlock HorizontalAlignment="Left" Margin="13,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="118" IsEnabled="False" Height="17" Text="PartNumber    ："/>
+            <TextBox x:Name="TextBox9" HorizontalAlignment="Left" Margin="152,78,0,0" Text="Unknown" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" FontSize="12"/>
+            <TextBlock HorizontalAlignment="Left" Margin="13,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="134" IsEnabled="False" Height="17"><Run Text="Speed                ："/><LineBreak/><Run/></TextBlock>
+            <TextBox x:Name="TextBox10" HorizontalAlignment="Left" Margin="152,101,0,0" Text="Unknown" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" FontSize="12"/>
+            <TextBlock HorizontalAlignment="Left" Margin="13,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="118" IsEnabled="False" Height="17" Text="DeviceLocator："/>
+            <TextBox x:Name="TextBox8" HorizontalAlignment="Left" Margin="152,57,0,0" Text="Unknown" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" FontSize="12"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Memory Information" FontFamily="Arial Black"/>
+            <TextBlock HorizontalAlignment="Left" Margin="13,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="134" IsEnabled="False" Height="17"><Run Text="TotalRam          ："/><LineBreak/><Run/></TextBlock>
+            <TextBox x:Name="TextBox11" HorizontalAlignment="Left" Margin="152,123,0,0" Text="Unknown" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" FontSize="12"/>
+        </Grid>
     </Grid>
 </Window>
